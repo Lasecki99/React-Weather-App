@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    background-image: url('../fog-1535201_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.app input {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+}
+
+.app ::-webkit-input-placeholder {
+    color: black;
+
+    text-align: center;
+}
+
+.app button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    border: 3px solid chartreuse;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.app button:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.app .result {
+
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+
+}
+
+.app .result h5 {
+    color: white;
+}
+
+h3,
+h4 {
+    color: white;
+    padding: 10px 0;
+}
+
+@media (max-width:361px) {
+    .app button {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h3,
+    h4 {
+        font-size: 21px;
+        padding: 2px;
+        ;
+    }
+
+    .app .result {
+        top: 73%;
+    }
+
+}
+
+@media(max-width:780px) {
+
+    h3,
+    h4 {
+        font-size: 23px;
+    }
+
+    .app ::-webkit-input-placeholder {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-height:800px) {
+
+    h3,
+    h4 {
+        font-size: 23px;
+    }
+
+
+
+}
+
+@media (max-height:666px) {
+
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media(max-height:620px) {
+
+    h3,
+    h4 {
+        font-size: 15px;
+    }
+
+
+}
