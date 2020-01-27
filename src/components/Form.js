@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { WeatherContext } from '../contexts/WeatherContextProvider';
 
-const Form = (props) => {
+const Form = () => {
+
+    const { handleCitySubmit, setInputValue, inputValue } = useContext(WeatherContext);
+
     return (
-        <form onSubmit={props.submit} action="">
-            <input onChange={props.change} placeholder="Wpisz nazwę miasta..." type="text" value={props.text} />
+        <form onSubmit={e => handleCitySubmit(e)}>
+            <input onChange={e => setInputValue(e.target.value)} placeholder="Wpisz nazwę miasta..." type="text" value={inputValue} />
             <button>Wyszukaj miejscowość</button>
         </form>
     )

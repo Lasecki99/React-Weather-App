@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { WeatherContext } from '../contexts/WeatherContextProvider';
 
-const Result = (props) => {
+const Result = () => {
 
-    const { err, city, pressure, sunset, sunrise, temp, wind, date } = props.weather
-
+    const { weatherData, messageErr } = useContext(WeatherContext);
     let content = null;
 
-    if (!err && city) {
-
-        const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString()
-        const sunsetTime = new Date(sunset * 1000).toLocaleTimeString()
+    if (weatherData) {
+        const { city, pressure, sunset, sunrise, temp, wind, date } = weatherData;
+        const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString();
+        const sunsetTime = new Date(sunset * 1000).toLocaleTimeString();
         content = (
             <div className='result'>
                 <h3>Wyniki wyszukiwania dla: <em>{city}</em></h3>
@@ -32,7 +32,7 @@ const Result = (props) => {
 
     return (
         <div className='result'>
-            {err ? <h5>Nie mamy w bazie {city}</h5> : content}
+            {messageErr ? <h5>Nie mamy w bazie {messageErr}</h5> : content}
         </div>
     )
 }
