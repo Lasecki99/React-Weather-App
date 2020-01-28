@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "b69a9e32ab555be2680f",
-    "url": "/React-Weather-App/static/css/main.383c62e6.chunk.css"
+    "revision": "02cd285d133131b08b42",
+    "url": "/React-Weather-App/static/css/main.cb8e2fa5.chunk.css"
   },
   {
-    "revision": "b69a9e32ab555be2680f",
+    "revision": "02cd285d133131b08b42",
     "url": "/React-Weather-App/static/js/main.0265ccd2.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/React-Weather-App/static/media/fog-1535201_1920.4e72ab63.jpg"
   },
   {
-    "revision": "7575572c85bc70679e63cca08d42c9b5",
+    "revision": "220c7f9f898558759788def9cff4e2cc",
     "url": "/React-Weather-App/index.html"
   }
 ];
